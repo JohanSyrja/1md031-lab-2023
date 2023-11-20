@@ -1,1 +1,92 @@
-Hello world
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+       <title>Page title shown in window title</title>
+       <meta charset="utf-8"/>
+   </head>
+   <main>
+        <body>
+
+            <header>
+                <h1>Welcome to BurgerOnline</h1>
+            </header>
+            <h2>Select burger </h2>
+            <p>This is where you execute burger selection</p>
+            <div style="display: inline-block;">
+                
+                <h2>The pink burger</h2>
+                <img src="images.jfif" alt="Ping Burger" style="width:300px;height:200px;">
+                <ol>Is made of plastic</ol>
+                <ol>For decorative purposes only</ol>
+            </div>
+            <div style="display: inline-block;">
+                
+                <h2>The pink burger</h2>
+                <img src="12772736-hamburger.jpg" alt="classic-burger" style="width:300px;height:200px;">
+                <ol>Made from locally grown produce</ol>
+                <ol>Contains gluten and lactose</ol>
+
+            </div>
+            <div style="display: inline-block;">
+                <h2>The pink burger</h2>
+                <img src="hamburger-7951202_1280.webp" alt="Cheese-burger" style="width:300px;height:200px;">
+                <ol>Gluten free & lactose free</ol>
+                <ol>Made from locally grown produce</ol>
+                
+            </div>
+            <h2>Customer information</h2>
+            <p>
+                This is where you provide necessary information
+            </p>
+
+            <h3>Delivery information</h3>
+            <section id="contact">
+                <p>
+                    <label for="full-name">Full name</label><br>
+                    <input type="text" id="full-name" name="fn" required="required" placeholder="First and last name">
+                </p>
+                <p>
+                    <label for="email">E-mail</label><br>
+                    <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+                </p>
+                <p>
+                    <label for="street-name">Street</label><br>
+                    <input type="text" id="" name="sn" required="required" placeholder="Street name">
+                </p>
+                <p>
+                    <label for="house-nbr">House</label><br>
+                    <input type="" id="hn" name="em" required="required" placeholder="House number" min="1">
+                </p>
+    
+            </section>
+            <section id="payment">
+                <p>
+                    <label for="payment-mehtod">Payment</label><br>
+                    <select id="Payment options" name="pay">
+                        <option>Pay-pal</option>
+                        <option>Bank transaction</option>
+                        <option>Card payment</option>
+                        <option selected="selected">Swish</option>
+                    </select>
+                 </p>
+                 <form>
+                    <label for="gender">Gender</label><br>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="non-binary" name="gender" value="Non-binary">
+                    <label for="non-binary">Non-binary</label><br>
+                    <input type="radio" id="unspecified" name="gender" value="Unspecified" checked="checked">
+                    <label selected="selected" for="unspecified">Unspecified</label><br>
+                  </form>
+            </section>
+            <input type="button" onclick="alert('Sending you to specified payment option')" value="Place Order">
+            <hr>
+            <footer>
+                <span>&copy; BurgersOnline Inc, 2023</span>
+            </footer>    
+        </body>
+        
+    </main> 
+</html>
