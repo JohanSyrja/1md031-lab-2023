@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Pink-Burger",
+        "kCal": 0,
+        "gluten": false,
+        "plastic": true,
+        "lactose": false,
+        "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6yVNEQh5HTdapwb58pFFFKlC5zkc3F6VL_w&s"
+    },
+    {
+        "name": "Classic-burger",
+        "kCal": 450,
+        "gluten": true,
+        "plastic": false,
+        "lactose": true,
+        "imgURL": "https://previews.123rf.com/images/nevodka/nevodka1203/nevodka120300181/12772736-hamburger.jpg"
+    },
+    {
+        "name": "Cheese-burger",
+        "kCal": 350,
+        "gluten": false,
+        "plastic": false,
+        "lactose": false,
+        "imgURL": "https://cdn.pixabay.com/photo/2023/04/25/23/13/hamburger-7951202_1280.jpg"
+    }
+  ]

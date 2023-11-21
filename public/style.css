@@ -43,16 +43,14 @@ h2, h3 {
  }
  
 .burgerFrame {
-    /* Got sidetracked and made everything stack horizontaly from the center
+   
     display: inline-block;
     text-align:center;
-    */
+
 }
 .burgerImage{
-    /*
     margin: 5px;
     padding: 5px;
-    */
 }
 .wrapper{
     grid-template-columns: 300px 300px 300px;
