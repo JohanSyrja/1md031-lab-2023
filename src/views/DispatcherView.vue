@@ -36,6 +36,7 @@
     </div>
   </div>
 </template>
+
 <script>
 import io from "socket.io-client";
 const socket = io();

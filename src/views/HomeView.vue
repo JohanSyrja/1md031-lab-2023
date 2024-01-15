@@ -20,12 +20,10 @@
                 v-for="burger in burgers"
                 v-bind:key="burger.name"
                 v-bind:burger="burger"
-                v-on:orderedBurgers="addToOrder()"
+                v-on:order="addToOrder($event)"
               />
             </section>
           </section>
-          <!--Handels the Orders part of the website-->
-          <!--v-on:orderedBurger="addToOrder($event)"-->
           <section class="order">
             <form>
             <h2>Customer information</h2>
@@ -93,7 +91,7 @@
           </section>
           <div class="orderButton">
             <input
-              v-on:click="console.log( orderdBurgers)"
+              v-on:click=submitOrder();
               type="button"
               value="Place Order"
               id="button"
@@ -203,7 +201,7 @@ export default {
       this.location.x = event.clientX - 10 - offset.x;
       this.location.y = event.clientY - 10 - offset.y;
     },
-    submitOrder: function (event) {
+    submitOrder: function () {
       socket.emit("addOrder", {
         orderId: this.getOrderNumber(),
         details: {
